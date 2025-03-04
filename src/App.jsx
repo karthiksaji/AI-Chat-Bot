@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-// import ChatBotStart from "./Components/ChatBotStart";
-// import ChatBotApp from "./Components/ChatBotApp";
+import ChatBotStart from "./Components/ChatBotStart";
+import ChatBotApp from "./Components/ChatBotApp";
 const App = () => {
   const [isChatting, setIsChatting] = useState(false);
   const handleStartChat = () => {
