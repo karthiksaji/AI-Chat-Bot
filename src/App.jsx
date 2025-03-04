@@ -14,7 +14,6 @@ const App = () => {
       {isChatting ? (
         <div>
           <ChatBotApp onGoBack={handleGoBack} />
-          <h1>hyyyy</h1>
         </div>
       ) : (
         <ChatBotStart onStartChat={handleStartChat} />

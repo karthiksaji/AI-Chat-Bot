@@ -6,9 +6,12 @@
 }
 
 .start-page-button {
-  width: 45rem;
+  /* width: 45rem;
   height: 25rem;
-  background: linear-gradient(135deg, #f42f5f, #8e25bf);
+  background: linear-gradient(135deg, #f42f5f, #8e25bf); */
+  width: 64rem;
+  height: 23rem;
+  background: linear-gradient(135deg, #1fe409, #0c4508);
   border: none;
   border-radius: 1rem;
   font-family: "Exo 2", sans-serif;
