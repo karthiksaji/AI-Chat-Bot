@@ -12,7 +12,10 @@ const App = () => {
   return (
     <div className="container">
       {isChatting ? (
-        <ChatBotApp onGoBack={handleGoBack} />
+        <div>
+          <ChatBotApp onGoBack={handleGoBack} />
+          <h1>hyyyy</h1>
+        </div>
       ) : (
         <ChatBotStart onStartChat={handleStartChat} />
       )}
