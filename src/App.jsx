@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 // import ChatBotStart from "./Components/ChatBotStart";
-import ChatBotApp from "./Components/ChatBotApp";
+// import ChatBotApp from "./Components/ChatBotApp";
 const App = () => {
   const [isChatting, setIsChatting] = useState(false);
   const handleStartChat = () => {
@@ -12,9 +12,11 @@ const App = () => {
   return (
     <div className="container">
       {isChatting ? (
-        <ChatBotApp onGoBack={handleGoBack} />
+        // <ChatBotApp onGoBack={handleGoBack} />
+        <p>hhyyy</p>
       ) : (
-        <h1>hello</h1> // <ChatBotStart onStartChat={handleStartChat} />
+        // <ChatBotStart onStartChat={handleStartChat} />
+        <p>hhyyy</p>
       )}
     </div>
   );
