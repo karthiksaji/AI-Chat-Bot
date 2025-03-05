@@ -7,7 +7,7 @@ const ChatBotStart = ({ onStartChat }) => {
       <button className="start-page-button" onClick={onStartChat}>
         REFLECTIONS AI CHAT BOT
       </button>
-      ;
+      
     </div>
   );
 };

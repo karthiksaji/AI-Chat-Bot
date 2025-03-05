@@ -4,6 +4,31 @@ import "./ChatBotApp.css";
 const ChatBotApp = ({ onGoBack, chats, setChats }) => {
   const [inputValue, setInputValue] = useState("");
   const [messages, setMessages] = useState(chats[0]?.messages || []);
+
+  const handleInputChange = (e) => {
+    setInputValue(e.target.value);
+  };
+  const sendMessage = () => {
+    if (inputValue.trim() === "") return;
+
+    const newMessage = {
+      type: "prompt",
+      text: inputValue,
+      timestamp: new Date().toLocaleTimeString(),
+    };
+
+    const updatedMessages = [...messages, newMessage];
+    setMessages(updatedMessages);
+    setInputValue("");
+
+    const updatedchats = chats.map((chat, index) => {
+      if (index === 0) {
+        return { ...chat, messages: updatedMessages };
+      }
+      return chat;
+    });
+    setChats(updatedchats);
+  };
   return (
     <div className="chat-app">
       <div className="chat-list">
